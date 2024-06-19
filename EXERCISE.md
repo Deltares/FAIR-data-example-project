@@ -59,6 +59,12 @@ the plots with the no data values removed. To do this we need several steps:
 
 
 # Exercise 2
+Before you continue to the next exercise, exit the pixi shell session:
+
+```powershell
+exit
+```
+
 For the second exercise we are going to create a reproducible project from
 scratch using all the tools and knowledge we have seen so far in the
 presentation and in this demo project. For this, we are going to combine several
