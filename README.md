@@ -1,5 +1,16 @@
 # Demo project FAIR-data
-This is a dummy project to demonstrate the Deltares [FAIR-data Cookbook](https://publicwiki.deltares.nl/display/FAIR/Checklist+Reproducible+Numerical+Modelling). Note that it is a dummy project, so no realistic calculations are performed. [More information about the FAIR cookbook is available at the Deltares wiki](https://publicwiki.deltares.nl/display/FAIR/Checklist+Reproducible+Numerical+Modelling). This dummy project is meant to get a basic understanding and working knowledge of version control for scripts and data, workflow management and sensible folder structure. For this we use GIT, DVC, Snakemake and Cookiecutter. More information and instructions can be found in [Deltares documentation](https://deltares.github.io/iMOD-Documentation\practical_git_dvc.html) and other online sources, but for the practical example the instructions below will suffice.
+This is a dummy project to demonstrate the Deltares [FAIR-data
+Cookbook](https://publicwiki.deltares.nl/display/FAIR/Checklist+Reproducible+Numerical+Modelling).
+Note that it is a dummy project, so no realistic calculations are performed.
+[More information about the FAIR cookbook is available at the Deltares
+wiki](https://publicwiki.deltares.nl/display/FAIR/Checklist+Reproducible+Numerical+Modelling).
+This dummy project is meant to get a basic understanding and working knowledge
+of version control for scripts and data, workflow management and sensible folder
+structure. For this we use GIT, DVC, Snakemake and Cookiecutter. More
+information and instructions can be found in [Deltares
+documentation](https://deltares.github.io/iMOD-Documentation\practical_git_dvc.html)
+and other online sources, but for the practical example the instructions below
+will suffice.
 
 
 ## Version control and retrieving the repository
@@ -26,7 +37,9 @@ git clone https://github.com/Deltares-research/FAIR-data-example-project.git
 > ``Set-ExecutionPolicy RemoteSigned -Scope CurrentUser``
 
 ## Scripting environment
-To be able to run this dummy project Python is required, in this case we use [pixi](https://prefix.dev/) to install a Python environment and all the required dependencies.
+To be able to run this dummy project Python is required, in this case we use
+[pixi](https://prefix.dev/) to install a Python environment and all the required
+dependencies.
 
 Download & install pixi with the command *in Windows Powershell*:
 
@@ -47,15 +60,21 @@ pixi install
 ```
 
 ## Data version control
-Dcv is used as a data version control system for the data that is required for this dummy project. This provides Git-like data version control to keep track of changes in data and to share data with colleagues.
+Dcv is used as a data version control system for the data that is required for
+this dummy project. This provides Git-like data version control to keep track of
+changes in data and to share data with colleagues.
 
 ## Manage the worklow
-Snakemake is used to manage the workflow. These are managed in a single [snakefile](Snakefile)
-Individual steps (e.g. script/shell command) are added as Snakemake *"rules"*. Each rule defines which input and output is required and generated in each step. Based on this snakemake determines the order in which multiple rules need to be executed.  
+Snakemake is used to manage the workflow. These are managed in a single
+[snakefile](Snakefile) Individual steps (e.g. script/shell command) are added as
+Snakemake *"rules"*. Each rule defines which input and output is required and
+generated in each step. Based on this snakemake determines the order in which
+multiple rules need to be executed. 
 
 
 ## Folder structure of the project
-Cookiecutter is used to create a standardized template for a folder structure for projects. Below is an example of such a template created using Cookiecutter:
+Cookiecutter is used to create a standardized template for a folder structure
+for projects. Below is an example of such a template created using Cookiecutter:
     
     ├── AUTHORS.md
     ├── LICENSE
@@ -82,7 +101,8 @@ Cookiecutter is used to create a standardized template for a folder structure fo
 
 
 ## Explanation of the project
-In this dummy project some very basic calculations are done using the SWAN wave model. For a more detailed explanation, read [TECHNICAL.md](/TECHNICAL.md).
+In this dummy project some very basic calculations are done using the SWAN wave
+model. For a more detailed explanation, read [TECHNICAL.md](/TECHNICAL.md).
 
 # Pizza course exercises
 This pizza course consists of two exercises. This repository contains the first
